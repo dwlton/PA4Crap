@@ -87,6 +87,7 @@ void Programmed_Illusion(int bit_map[IMAGE_X][IMAGE_Y], char overlay[IMAGE_X][IM
                 break;
             }
         }
+        printf("\x1b[0m\n"); // reset color and newline
     }
 }
 void Scrying(FILE* filename, int bit_map[IMAGE_X][IMAGE_Y])  { //reads the enitre .bmp into an array... 
@@ -148,10 +149,10 @@ void Silent_Image(int bit_map[IMAGE_X][IMAGE_Y]) { // a test printer, for making
                 printf(CO_GREEN " ");
                 break;
             case 3:
-                printf(CO_YELLOW " ");
+                printf(CO_YELLOW "  ");
                 break;
             case 4:
-                printf(CO_BLUE " ");
+                printf(CO_BLUE "  ");
                 break;
             case 5:
                 printf(CO_MAGENTA " ");

@@ -53,7 +53,9 @@ void /*void*/ main(void /*void*/ ) {
 		scanf("%d", &bet);
 		system("pause");
 		system("cls");
-		Silent_Image(bit_map);
+		Simulacrum(overlay, balance, bet, die1, die2, sum, pnt);
+		Programmed_Illusion(bit_map, overlay);
+		//Silent_Image(bit_map);
 
 		//craps game
 		if (bet > balance) {

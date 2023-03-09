@@ -68,3 +68,4 @@ static inline int stbi_load(const char* filename, int* x, int* y, int* comp, int
 void Programmed_Illusion(int bit_map[IMAGE_X][IMAGE_Y], char overlay[IMAGE_X][IMAGE_Y]); // combines simulacrum and scrying outputs and prints them
 void Scrying(FILE* filename, int bit_map[IMAGE_X][IMAGE_Y]); //turns a bmp into a array with 8 colors
 void Silent_Image(int bit_map[IMAGE_X][IMAGE_Y]);  // prints ONLY the image, not the game text
+void Simulacrum(char overlay[IMAGE_X][IMAGE_Y], int balance, int bet, int die1, int die2, int sum, int pnt);
